@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página 01</title>
+    <title>TMB</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="container"> <!-- =================== Container =========================== -->
         <header>
-            <h1> Home</h1>
+            <h1>Calculadora de Taxa Metabólica Basal</h1>
         </header>
         <nav> <!-- Navigation bar -->
             <ul>  <!-- Menu de navegação -->
@@ -20,11 +20,29 @@
                 <li><a href="contact.html"></a>Contato</li>
             </ul>
         </nav>
+
+
         <article>
-            <div id="content">  <!-- Page content -->
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dolore sint veniam modi. Facilis dicta eius animi molestiae sit. Similique deleniti voluptas qui culpa? Quidem nam officia adipisci totam sequi! </p>
-            </div>
+                <h2>Insira seus dados</h2>
+                <form id="calcFORM">  <!-- Formulário de imput -->
+                    Nome: <input type="text" name="name">
+                    <br><br>
+                    Sexo biológico<sup>1</sup>:
+                    <!-- type="radio" => input via seleção--> 
+                    <input type="radio" name="gender" value="female"> Feminino
+                    <input type="radio" name="gender" value="male"> Masculino
+                    <br><br>
+                    Peso: <input type="number" name="weight" value="weight"> <br><br>
+                    Altura: <input type="number" name="height" value="height"> <br><br>
+                    Idade: <input type="number" name="age" value="age">  <br><br>
+                    
+                    <br><br>
+
+                    <p style="font-size: smaller;">1. Caso trans, colocar gênero atual (se hormonizade)</p>
+                </form>
+                
         </article>
+
         <footer> <!-- Footer -->
 
         </footer>
