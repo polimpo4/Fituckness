@@ -23,20 +23,28 @@
         <article>
                 <h2>Insira seus dados</h2>
                 <form id="calcFORM">  <!-- Formulário de imput -->
-                    Nome: <input type="text" name="name">
-                    <br><br>
-                    Sexo biológico<sup>1</sup>:
-                    <!-- type="radio" => input via seleção--> 
-                    <input type="radio" name="gender" value="female"> Feminino
-                    <input type="radio" name="gender" value="male"> Masculino
-                    <br><br>
-                    Peso: <input type="number" name="weight" value="weight"> <br><br>
-                    Altura: <input type="number" name="height" value="height"> <br><br>
-                    Idade: <input type="number" name="age" value="age">  <br><br>
-                    
-                    <br><br>
+                    <div class="form-container">
+                        <label for="name">Nome: </label>
+                        <input type="text" name="name" id="name">
+                        <br><br>
+                        Sexo biológico<sup><strong>1 </strong></sup>:
+                        <!-- type="radio" => input via seleção--> 
+                        <label for="fem">Feminino</label>
+                        <input type="radio" name="gender" value="female" id="fem">
+                        <label for="masc">Masculino</label>
+                        <input type="radio" name="gender" value="male" id="masc">
+                        <br><br>
+                        <label for="peso">Peso: </label>
+                        <input type="number" name="weight" value="weight" id="peso"> <br><br>
+                        <label for="altura">Altura: </label>
+                        <input type="number" name="height" value="height" id="altura"> <br><br>
+                        <label for="peso">Idade: </label>
+                        <input type="number" name="age" value="age" id="idade">  <br><br>
+                        <label for="ativity">Nível de atividade</label>
+                        <br><br>                        
+                    </div>
 
-                    <p style="font-size: smaller;">1. Caso trans, colocar gênero atual (se hormonizade)</p>
+                    <p style="font-size: smaller;"><strong>1.</strong> Caso trans, colocar gênero atual (se hormonizade)</p>
                 </form>
                 
         </article>
