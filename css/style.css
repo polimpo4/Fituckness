@@ -1,16 +1,5 @@
-/* Form group ======== */
-
-.form-group {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.form-group label {
-    width: 100px; /* adjust as needed */
-    margin-right: 10px;
-}
-
-.form-group input {
-    flex-grow: 1;
+body
+{
+    background-color: rgb(117, 128, 106);
+    margin:0
 }
