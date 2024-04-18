@@ -1,3 +1,20 @@
+function sanitizeInput(input)
+{
+    /*
+    In this function, document.createTextNode(input) creates a text node which
+    automatically encodes special HTML characters. div.innerHTML then returns
+    the sanitized HTML as a string.
+    */
+
+    // Create a new div element
+    var div = document.createElement('div');
+    // Create a text node from the input, which automatically encodes special
+    // HTML characters
+    div.appendChild(document.createTextNode(input));
+    // Return the sanitized HTML as a string
+    return div.innerHTML;
+}
+
 function get_gender_from_radio()
 {
     // Get all radio buttons with name 'gender'
@@ -85,20 +102,3 @@ function calc_tbm()
 }
 
 /* Satinization functions */
-
-function sanitizeInput(input)
-{
-    /*
-    In this function, document.createTextNode(input) creates a text node which
-    automatically encodes special HTML characters. div.innerHTML then returns
-    the sanitized HTML as a string.
-    */
-
-    // Create a new div element
-    var div = document.createElement('div');
-    // Create a text node from the input, which automatically encodes special
-    // HTML characters
-    div.appendChild(document.createTextNode(input));
-    // Return the sanitized HTML as a string
-    return div.innerHTML;
-}
