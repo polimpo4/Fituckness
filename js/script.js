@@ -8,7 +8,10 @@ function get_gender_from_radio()
     for (let i = 0; i < calc_radio.length; i++)
         {
             // If the calc_radio is checked, get the value:
-            actual_gender = calc_radio[i].value;
+            if (calc_radio[i].checked)
+                {
+                    actual_gender = calc_radio[i].value;
+                }
         }
 
     return actual_gender
@@ -76,20 +79,29 @@ function calc_tbm()
         }
     else
         {
-            if (gender == "male")
+            switch (gender)
                 {
-                    var result =
-                        (AF *
-                         (66 + ((13.7 * weight) + (5 * height) - (6.8 * age))))
-                            .toFixed(2); // toFixed(2) format the result for 2
-                                         // decimals
-                }
-            else
-                {
-                    var result = (AF * (655 + ((9.6 * weight) + (1.8 * height) -
-                                               (4.7 * age))))
-                                     .toFixed(2); // toFixed(2) format the
-                                                  // result for 2 decimals
+                    case "male":
+                        {
+                            var result =
+                                (AF * (66 + ((13.7 * weight) + (5 * height) -
+                                             (6.8 * age))))
+                                    .toFixed(2); // toFixed(2) format the result
+                                                 // for 2 decimals
+                            break;
+                        }
+                    case "female":
+                        {
+                            var result =
+                                (AF * (655 + ((9.6 * weight) + (1.8 * height) -
+                                              (4.7 * age))))
+                                    .toFixed(2); // toFixed(2) format the
+                                                 // result for 2 decimals
+                            break;
+                        }
+                    default:
+                        window.alert("Você não selecionou o sexo.")
+                        break;
                 }
 
             document.getElementById("result").innerHTML = // Output
