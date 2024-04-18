@@ -55,27 +55,52 @@ function get_AF()
 
 function calc_tbm()
 {
-    var name = document.getElementById("name").value;
-    var weight = document.getElementById("peso").value;
-    var height = document.getElementById("altura").value;
+    var name = sanitizeInput(document.getElementById("name").value);
+    var weight = sanitizeInput(document.getElementById("peso").value);
+    var height = sanitizeInput(document.getElementById("altura").value);
+    var age = sanitizeInput(document.getElementById("idade").value);
+    // var name = document.getElementById("name").value;
+    // var weight = document.getElementById("peso").value;
+    // var height = document.getElementById("altura").value;
     var age = document.getElementById("idade").value;
     var gender = get_gender_from_radio()
     var AF = get_AF()
 
-    window.alert(`Hello ${name}, weight ${weight}, height ${height}, age ${
-        age}, sex ${gender}, AF ${AF}`);
-
     if (gender == "male")
-        {
-            var result =
-                AF * (66 + ((13.7 * weight) + (5 * height) - (6.8 * age)))
-        }
+    {
+        var result =
+            (AF * (66 + ((13.7 * weight) + (5 * height) - (6.8 * age))))
+                .toFixed(2); // toFixed(2) format the result for 2 decimals
+    }
     else
-        {
-            var result =
-                (AF * (655 + ((9.6 * weight) + (1.8 * height) - (4.7 * age))))
-        }
+    {
+        var result =
+            (AF * (655 + ((9.6 * weight) + (1.8 * height) - (4.7 * age))))
+                .toFixed(2); // toFixed(2) format the result for 2 decimals
+    }
 
-    document.getElementById("result").innerHTML =
+    document.getElementById("result").innerHTML = // Output
         `Olá, ${name}, você deve ingerir ${result} Kcal para manter o peso`
+
+    // // Used for debug
+    // window.alert(`Hello ${name}, weight ${weight}, height ${height}, age ${
+    //     age}, sex ${gender}, AF ${AF}`);
+}
+
+/* Satinization functions */
+
+function sanitizeInput(input)
+{
+    /*
+    In this function, document.createTextNode(input) creates a text node which
+    automatically encodes special HTML characters. div.innerHTML then returns
+    the sanitized HTML as a string.*/
+
+    // Create a new div element
+    var div = document.createElement('div');
+    // Create a text node from the input, which automatically encodes special
+    // HTML characters
+    div.appendChild(document.createTextNode(input));
+    // Return the sanitized HTML as a string
+    return div.innerHTML;
 }

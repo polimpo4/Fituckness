@@ -27,7 +27,7 @@
                 <form id="calcFORM">  <!-- Formulário de imput -->
                     <div class="form-container">
                         <label for="name">Nome: </label>
-                        <input type="text" name="name" id="name">
+                        <input type="text" name="name" maxlength="12" id="name">
                         <br><br>
                         Sexo biológico<sup><strong>1 </strong></sup>:
                         <!-- type="radio" => input via seleção--> 
@@ -37,11 +37,11 @@
                         <input type="radio" name="gender" value="male" id="masc">
                         <br><br>
                         <label for="peso">Peso: </label>
-                        <input type="number" name="weight" value="weight" id="peso"> <br><br>
+                        <input type="number" name="weight" value="weight" min="1" max="500" id="peso"> Kg<br><br>
                         <label for="altura">Altura: </label>
-                        <input type="number" name="height" value="height" id="altura"> <br><br>
+                        <input type="number" name="height" value="height" min="1" max="270" id="altura"> cm<br><br>
                         <label for="peso">Idade: </label>
-                        <input type="number" name="age" value="age" id="idade">  <br><br>
+                        <input type="number" name="age" value="age" min="1" max="99" id="idade"> Anos <br><br>
                         <!-- List -->
                         <label for="atividade">Nível de atividade: </label>
                         <select id="activity_List" name="activity_List" id="atividade">
@@ -65,6 +65,6 @@
 
         </footer>
     </div>  <!-- =================== Container ===================================== -->
-    <script src="../js/scriptcopy.js"></script>
+    
 </body>
 </html>
