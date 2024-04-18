@@ -95,7 +95,7 @@ function calc_tbm()
 
     document.getElementById("result").innerHTML = // Output
         `Olá, ${name}, você deve ingerir ${result} Kcal para manter o peso`
-
+        
     // // Used for debug
     // window.alert(`Hello ${name}, weight ${weight}, height ${height}, age ${
     //     age}, sex ${gender}, AF ${AF}`);
