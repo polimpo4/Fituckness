@@ -59,9 +59,6 @@ function calc_tbm()
     var weight = sanitizeInput(document.getElementById("peso").value);
     var height = sanitizeInput(document.getElementById("altura").value);
     var age = sanitizeInput(document.getElementById("idade").value);
-    // var name = document.getElementById("name").value;
-    // var weight = document.getElementById("peso").value;
-    // var height = document.getElementById("altura").value;
     var age = document.getElementById("idade").value;
     var gender = get_gender_from_radio()
     var AF = get_AF()
@@ -94,7 +91,8 @@ function sanitizeInput(input)
     /*
     In this function, document.createTextNode(input) creates a text node which
     automatically encodes special HTML characters. div.innerHTML then returns
-    the sanitized HTML as a string.*/
+    the sanitized HTML as a string.
+    */
 
     // Create a new div element
     var div = document.createElement('div');
