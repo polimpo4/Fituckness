@@ -72,7 +72,7 @@ function calc_tbm()
     if ((name == "") || (weight == "") || (height == "") || (age == ""))
         {
             window.alert(
-                "Parâmetros inválidos, verifique se em algum está faltando informação");
+                "Parâmetros inválidos, verifique se em algum campo está faltando informação");
         }
     else
         {
