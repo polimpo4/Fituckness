@@ -324,3 +324,50 @@ nav ul li a:hover{
   h2 {
     color: #ffffff;
   }
+
+  /*-----------------------------------*/
+
+  .list-buttons {
+    float: left;
+  }
+  
+  .list-buttons li {
+    list-style-type: none;
+    margin-right: 10px;
+  }
+  
+  .list-buttons li a, .list-buttons li button {
+    padding: 13px 45px 13px 28px;
+    border-radius: 20px;
+  }
+  
+  .inputs-calc input {
+    display: block;
+    padding: 6px 10px;
+    border-radius: 10px
+  }
+  
+  .buttons-calc.list-buttons {
+    display: block;
+    width: 100%
+  }
+  
+  .buttons-calc.list-buttons button {
+    outline: 0;
+    border: 0
+  }
+  
+  .buttons-calc.list-buttons li {
+    float: left;
+  }
+  
+  .table-calc tbody tr td {
+    padding: 8px 20px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #dee2e7
+  }
+  
+  .calc-result{
+    font-size:20px;
+    margin:20px 0
+  }
