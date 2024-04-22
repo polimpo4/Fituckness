@@ -53,6 +53,15 @@ nav ul li a:hover{
 
 /* -------------------- ARTICLE ------------------------------ */
 
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh; /* Esta altura é apenas para o exemplo, ajuste conforme necessário */
+  }
+
+
 .parent {
     width: 290px;
     height: 300px;
