@@ -698,14 +698,14 @@ nav ul li a:hover{
                 }
               
               
-                .logolink {   
+                .logograzi {   
                   position: absolute;
                   right: 0;
                   top: 0;
                   transform-style: preserve-3d;
                 }
                 
-                .logolink .circle {   
+                .logograzi .circle {   
                   display: block;
                   position: absolute;
                   aspect-ratio: 1;
@@ -719,14 +719,14 @@ nav ul li a:hover{
                   transition: all 0.5s ease-in-out;
                 }
                 
-                .logolink .circleone {    
+                .logograzi .circleone {    
                   width: 170px;
                   transform: translate3d(0, 0, 20px);
                   top: 8px;
                   right: 8px;
                 }
                 
-                .logolink .circletwo {     
+                .logograzi .circletwo {     
                   width: 140px;
                   transform: translate3d(0, 0, 40px);
                   top: 10px;
@@ -736,7 +736,7 @@ nav ul li a:hover{
                   transition-delay: 0.4s;
                 }
                 
-                .logolink .circlethree {   
+                .logograzi .circlethree {   
                   width: 110px;
                   transform: translate3d(0, 0, 60px);
                   top: 17px;
@@ -744,7 +744,7 @@ nav ul li a:hover{
                   transition-delay: 0.8s;
                 }
                 
-                .logolink .circlefour {    
+                .logograzi .circlefour {    
                   width: 80px;
                   transform: translate3d(0, 0, 80px);
                   top: 23px;
@@ -752,7 +752,7 @@ nav ul li a:hover{
                   transition-delay: 1.2s;
                 }
                 
-                .logolink .circlefive {    
+                .logograzi .circlefive {    
                   width: 50px;
                   transform: translate3d(0, 0, 100px);
                   top: 30px;
@@ -762,7 +762,7 @@ nav ul li a:hover{
                   transition-delay: 1.6s;
                 }
                 
-                .logolink .circlefive .svg {   
+                .logograzi .circlefive .svg {   
                   width: 20px;
                   fill: white;
                 }
@@ -777,19 +777,19 @@ nav ul li a:hover{
                   box-shadow: rgba(92, 94, 92, 0.082) -5px 20px 10px 0px;
                 }
                 
-                .parentg:hover .cardg .logolink .circletwo {    
+                .parentg:hover .cardg .logograzi .circletwo {    
                   transform: translate3d(0, 0, 60px);
                 }
                 
-                .parentg:hover .cardg .logolink .circlethree {   
+                .parentg:hover .cardg .logograzi .circlethree {   
                   transform: translate3d(0, 0, 80px);
                 }
                 
-                .parentg:hover .cardg .logolink .circlefour {   
+                .parentg:hover .cardg .logograzi .circlefour {   
                   transform: translate3d(0, 0, 100px);
                 }
                 
-                .parentge:hover .cardg .logolink .circlefive {  
+                .parentg:hover .cardg .logograzi .circlefive {  
                   transform: translate3d(0, 0, 120px);
                 }
                 h2 {
