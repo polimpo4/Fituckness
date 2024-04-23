@@ -582,19 +582,19 @@ nav ul li a:hover{
                   transition: all 0.5s ease-in-out;
                 }
                 
-                .conteudo {  
+                .conteudog {  
                   padding: 100px 70px 0px 30px;
                   transform: translate3d(0, 0, 26px);
                 }
                 
-                .conteudo .title {    
+                .conteudog .title {    
                   display: block;
                   color: #ffffff;
                   font-weight: 900;
                   font-size: 20px;
                 }
                 
-                .conteudo .text { 
+                .conteudog .text { 
                   display: block;
                   color: rgb(255, 255, 255);
                   font-size: 15px;
