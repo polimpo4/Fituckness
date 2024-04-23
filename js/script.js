@@ -28,33 +28,33 @@ function get_AF()
     var selectItem = document.getElementById("activity_List");
     // Get the selected option
     var selected_option = selectItem.value;
-    var activity_factor
+    var activity_factor;
 
     switch (selected_option)
-    {
-        case "sendentario":
-            {
-                return activity_factor = 1;
-            }
-        case "pouco":
-            {
-                return activity_factor = 1.4;
-            }
-        case "moderadamente":
-            {
-                return activity_factor = 1.6;
-            }
-        case "muito":
-            {
-                return activity_factor = 1.9;
-            }
-        case "extremamente":
-            {
-                return activity_factor = 2.5;
-            }
-            // We don't need default option, because always one of the given
-            // cases will be satisfied
-    }
+        {
+            case "sendentario":
+                {
+                    return activity_factor = 1;
+                }
+            case "pouco":
+                {
+                    return activity_factor = 1.4;
+                }
+            case "moderadamente":
+                {
+                    return activity_factor = 1.6;
+                }
+            case "muito":
+                {
+                    return activity_factor = 1.9;
+                }
+            case "extremamente":
+                {
+                    return activity_factor = 2.5;
+                }
+                // We don't need default option, because always one of the given
+                // cases will be satisfied
+        }
 }
 
 function calc_tbm()
@@ -112,6 +112,74 @@ function calc_tbm()
     // // Used for debug
     // window.alert(`Hello ${name}, weight ${weight}, height ${height}, age ${
     //     age}, sex ${gender}, AF ${AF}`);
+}
+
+/* -------------------------- IMC -----------------------------------*/
+
+function calc_imc()
+{
+    var altura = document.getElementById("altura_input").value;
+    var peso = document.getElementById("peso_input").value;
+    var result;
+    var category;
+
+    if ((altura == "") || (peso == ""))
+        {
+            if (altura == "")
+                {
+                    window.alert("Favor preencher o campo altura");
+                }
+            if (peso == "")
+                {
+                    window.alert("Favor preencher o campo peso");
+                }
+        }
+    else
+        {
+            result = (peso / altura ** 2).toFixed(2);
+            category = Return_Category(result);
+
+            document.getElementById("IMC_result").innerHTML =
+                `Seu IMC é <strong>${
+                    result}</strong> e você se enquadra na categoria <strong>${
+                    category}</strong>`;
+        }
+}
+
+function Return_Category(result)
+{
+    var category;
+
+    if (result < 18.5)
+        {
+            category = "Magreza";
+            return category;
+        }
+    else if (result < 24.9)
+        {
+            category = "Normal";
+            return category
+        }
+    else if (result < 29.9)
+        {
+            category = "Sobrepeso";
+            return category;
+        }
+    else if (result < 39.9)
+        {
+            category = "Obesidade"
+            return category
+        }
+    else
+        {
+            category = "Obesidade Grave"
+        }
+}
+
+function clean()
+{
+    document.getElementById("altura_input").value = "";
+    document.getElementById("peso_input").value = "";
 }
 
 /* ------------------- Satinization functions -----------------------*/

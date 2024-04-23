@@ -41,8 +41,8 @@
 				</div>
 				
 				<ul class="buttons-calc list-buttons">
-					<li><button type="button" id="submit_calc" data-it-button="Calcular">Calcular</button></li>
-					<li><button type="button" id="clear_calc" data-it-button="Limpar">Limpar</button></li>
+					<li><button type="button" id="submit_calc" data-it-button="Calcular" onclick="calc_imc()">Calcular</button></li>
+					<li><button type="button" id="clear_calc" data-it-button="Limpar" onclick="clean()">Limpar</button></li>
 				</ul>
 
 				<table class="table-calc" cellspacing="0">
@@ -92,7 +92,7 @@
 					</tbody>
 				</table>
                 <div class="calc-result">
-					<span>SEU IMC:</span>
+					<span>SEU IMC:</span> <span id="IMC_result"></span>
 				</div>
 			</div>
         </article>
