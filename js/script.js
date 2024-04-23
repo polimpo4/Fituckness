@@ -14,7 +14,7 @@ function get_gender_from_radio()
                 }
         }
 
-    return actual_gender
+    return actual_gender;
 }
 
 function get_AF()
@@ -173,6 +173,7 @@ function Return_Category(result)
     else
         {
             category = "Obesidade Grave"
+            return category
         }
 }
 
