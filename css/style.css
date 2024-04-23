@@ -325,6 +325,276 @@ nav ul li a:hover{
     color: #ffffff;
   }
 
+  .parentone {     /*c */
+    width: 290px;
+    height: 300px;
+    perspective: 1000px;
+  }
+  
+  .kard {
+    height: 100%;
+    border-radius: 50px;
+    background: linear-gradient(135deg, rgb(102, 15, 1255) 0%, rgb(242, 14, 193) 100%);
+    transition: all 0.5s ease-in-out;
+    transform-style: preserve-3d;
+    box-shadow: rgba(5, 71, 17, 0) 40px 50px 25px -40px, rgba(5, 71, 17, 0.2) 0px 25px 25px -5px;
+  }
+  
+  .vidro {
+    transform-style: preserve-3d;
+    position: absolute;
+    inset: 8px;
+    border-radius: 55px;
+    border-top-right-radius: 100%;
+    background: linear-gradient(0deg, rgb(242, 14, 193) 0%, rgba(102, 15, 255, 0.281) 100%);
+    transform: translate3d(0px, 0px, 25px);
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .conteudo {   /*c */
+    padding: 100px 70px 0px 30px;
+    transform: translate3d(0, 0, 26px);
+  }
+  
+  .conteudo .title {    /*c */
+    display: block;
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 20px;
+  }
+  
+  .conteudo .text { /*c */
+    display: block;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    margin-top: 20px;
+  }
+  
+  .botao { /*c */
+    padding: 10px 12px;
+    transform-style: preserve-3d;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transform: translate3d(0, 0, 26px);
+  }
+     
+  .botao .view-more {  /*c */
+    display: flex;
+    align-items: center;
+    width: 40%;
+    justify-content: flex-end;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .botao .view-more:hover {     /*c */
+    transform: translate3d(0, 0, 20px);
+  }
+  
+  .botao .view-more .view-more-button {     /*c */
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-weight: bolder;
+    font-size: 12px;
+  }
+  
+  .botao .view-more .svg {      /*c */
+    fill: none;
+    stroke: #ffffff;
+    stroke-width: 3px;
+    max-height: 15px;
+  }
+  
+  .botao .social-buttons-container {    /*c */
+    display: flex;
+    gap: 10px;
+    transform-style: preserve-3d;
+  }
+  
+  .botao .social-buttons-container .social-button {     /*c */
+    width: 30px;
+    aspect-ratio: 1;
+    padding: 5px;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    border: none;
+    display: grid;
+    place-content: center;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 7px 5px -5px;
+  }
+
+  .botao .social-buttons-container .social-button:first-child {     /*c */
+    transition: transform 0.2s ease-in-out 0.4s, box-shadow 0.2s ease-in-out 0.4s;
+  }
+  
+  .botao .social-buttons-container .social-button:nth-child(2) {           /*c */            
+    transition: transform 0.2s ease-in-out 0.6s, box-shadow 0.2s ease-in-out 0.6s;
+  }
+  
+  .botao .social-buttons-container .social-button:nth-child(3) {        /*c */
+    transition: transform 0.2s ease-in-out 0.8s, box-shadow 0.2s ease-in-out 0.8s;
+  }
+  
+  .botao .social-buttons-container .social-button .svg {        /*c */
+    width: 15px;        
+    fill: #000000;
+  }
+
+                /*2passa o cursor nos icons link,git */  
+  .botao .social-buttons-container .social-button:hover {    /*c */
+    background: rgba(59, 216, 255, 0);
+  }
+                  /* 2background icons*/
+  .botao .social-buttons-container .social-button:hover .svg {   /*c */
+    fill: rgb(255, 255, 255);
+  }
+  
+  .Btn {
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: .4s;
+    cursor: pointer;
+    position: relative;
+    background-color: rgb(31, 31, 31);
+    overflow: hidden;
+  }
+  
+  .svgIcon {
+    transition-duration: .3s;
+  }
+  
+  .svgIcon path {
+    fill: white;
+  }
+  
+  
+  .Btn:hover {
+    width: 110px;
+    transition-duration: .4s;
+    border-radius: 30px;
+  }
+  
+  .Btn:hover .text {
+    opacity: 1;
+    transition-duration: .4s;
+  }
+  
+  .Btn:hover .svgIcon {
+    opacity: 0;
+    transition-duration: .3s;
+  }
+
+
+  .logolink {    /*c */
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform-style: preserve-3d;
+  }
+  
+  .logolink .circle {    /*c */
+    display: block;
+    position: absolute;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    top: 0;
+    right: 0;
+    box-shadow: rgba(0, 0, 0, 0.2) -10px 10px 20px 0px;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    background: rgba(68, 165, 255, 0.2);
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .logolink .circleone {     /*c */
+    width: 170px;
+    transform: translate3d(0, 0, 20px);
+    top: 8px;
+    right: 8px;
+  }
+  
+  .logolink .circletwo {     /*c */
+    width: 140px;
+    transform: translate3d(0, 0, 40px);
+    top: 10px;
+    right: 10px;
+    -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+    transition-delay: 0.4s;
+  }
+  
+  .logolink .circlethree {   /*c */
+    width: 110px;
+    transform: translate3d(0, 0, 60px);
+    top: 17px;
+    right: 17px;
+    transition-delay: 0.8s;
+  }
+  
+  .logolink .circlefour {    /*c */
+    width: 80px;
+    transform: translate3d(0, 0, 80px);
+    top: 23px;
+    right: 23px;
+    transition-delay: 1.2s;
+  }
+  
+  .logolink .circlefive {    /*c */
+    width: 50px;
+    transform: translate3d(0, 0, 100px);
+    top: 30px;
+    right: 30px;
+    display: grid;
+    place-content: center;
+    transition-delay: 1.6s;
+  }
+  
+  .logolink .circlefive .svg {   /*c */
+    width: 20px;
+    fill: white;
+  }
+  
+  .parentone:hover .kard {   /*c */
+    transform: rotate3d(1, 1, 0, 30deg);
+    box-shadow: rgba(255, 255, 255, 0.3) 30px 50px 25px -40px, rgba(5, 71, 17, 0.1) 0px 25px 30px 0px;
+  }
+  
+  .parentone:hover .kard .bottom .social-buttons-container .social-button {  /*c */
+    transform: translate3d(0, 0, 50px);
+    box-shadow: rgba(92, 94, 92, 0.082) -5px 20px 10px 0px;
+  }
+  
+  .parentone:hover .kard .logolink .circletwo {    /*c */
+    transform: translate3d(0, 0, 60px);
+  }
+  
+  .parentone:hover .kard .logolink .circlethree {   /*c */
+    transform: translate3d(0, 0, 80px);
+  }
+  
+  .parentone:hover .kard .logolink .circlefour {   /*c */
+    transform: translate3d(0, 0, 100px);
+  }
+  
+  .parentone:hover .kard .logolink .circlefive {    /*c */
+    transform: translate3d(0, 0, 120px);
+  }
+  h2 {
+    color: #ffffff;
+  }
+
   /*-----------------------------------*/
 
   .list-buttons {
