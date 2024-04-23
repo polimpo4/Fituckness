@@ -1,7 +1,6 @@
-body
-{
-    background-color: rgba(83, 83, 82, 0.61);
-    margin:0
+body {
+  background: linear-gradient(to right, rgb(110, 87, 12), rgb(120, 115, 13));
+  margin:0
 }
 
 #container
@@ -550,7 +549,7 @@ nav ul li a:hover{
     color: #ffffff;
   }
 
-                             /*AboutUs Grazi */    
+  /*AboutUs Grazi */    
 
                   
   /*-----------------------------------*/
