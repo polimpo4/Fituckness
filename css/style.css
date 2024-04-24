@@ -560,7 +560,7 @@ nav ul li a:hover{
 .kardg {
   height: 100%;
   border-radius: 50px;
-  background: linear-gradient(135deg, rgb(102, 15, 1255) 0%, rgb(209, 233, 235) 100%);
+  background: linear-gradient(135deg, rgb(102, 15, 1255) 0%, rgba(168, 153, 166, 0.541) 100%);
   transition: all 0.5s ease-in-out;
   transform-style: preserve-3d;
   box-shadow: rgba(0, 0, 0, 0) 40px 50px 25px -40px, rgba(0, 0, 0, 0.2) 0px 25px 25px -5px;
@@ -572,10 +572,10 @@ nav ul li a:hover{
   inset: 8px;
   border-radius: 55px;
   border-top-right-radius: 100%;
-  background: linear-gradient(0deg, rgba(255, 223, 248, 0.479) 0%, rgba(250, 237, 246, 0.281) 100%);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.822) 0%, rgba(82, 2, 55, 0.281) 100%);
   transform: translate3d(0px, 0px, 25px);
-  border-left: 1px solid rgba(255, 185, 232, 0.664);
-  border-bottom: 1px solid rgba(255, 2, 213, 0.185);
+  border-left: 1px solid rgba(2, 2, 2, 0.664);
+  border-bottom: 1px solid rgba(15, 15, 15, 0.185);
   transition: all 0.5s ease-in-out;
 }
 
@@ -590,18 +590,17 @@ nav ul li a:hover{
   font-weight: 900;
   font-size: 20px;
 }
-
 .conteudog .text { 
   display: block;
   color: rgb(255, 255, 255);
-  font-size: 15px;
-  margin-top: 20px;
+  font-size: 5px;
+  margin-top: 10px;
 }
 
 .botaog { 
   padding: 10px 12px;
   transform-style: preserve-3d;
-  position: absolute;
+  position: fixed;
   bottom: 20px;
   left: 20px;
   right: 20px;
@@ -665,7 +664,7 @@ nav ul li a:hover{
   justify-content: center;
   transition-duration: .4s;
   cursor: pointer;
-  position: relative;
+  position: fixed;
   background-color: rgb(158, 156, 158);
   overflow: hidden;
 }
@@ -713,7 +712,7 @@ nav ul li a:hover{
   box-shadow: rgba(0, 0, 0, 0.377) -10px 10px 20px 0px;
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
-  background: rgba(241, 182, 253, 0.075);
+  background: rgba(35, 31, 36, 0.075);
   transition: all 0.5s ease-in-out;
 }
 
@@ -793,6 +792,251 @@ nav ul li a:hover{
 h2 {
   color: #ffffff;
 }
+        /*4 aboutUS*/
+       
+        .parentv{    
+          width: 290px;
+          height: 300px;
+          perspective: 1000px;
+        }
+        
+        .kardv {
+          height: 100%;
+          border-radius: 50px;
+          background: linear-gradient(135deg, rgb(102, 15, 1255) 0%, rgb(31, 34, 77) 100%);
+          transition: all 0.5s ease-in-out;
+          transform-style: preserve-3d;
+          box-shadow: rgba(0, 0, 0, 0) 40px 50px 25px -40px, rgba(0, 0, 0, 0.2) 0px 25px 25px -5px;
+        }
+        
+        .vidrov {
+          transform-style: preserve-3d;
+          position: absolute;
+          inset: 8px;
+          border-radius: 55px;
+          border-top-right-radius: 100%;
+          background: linear-gradient(0deg, rgba(4, 3, 66, 0.479) 0%, rgba(0, 0, 0, 0.281) 100%);
+          transform: translate3d(0px, 0px, 25px);
+          border-left: 1px solid rgba(0, 0, 0, 0.664);
+          border-bottom: 1px solid rgba(0, 0, 0, 0.185);
+          transition: all 0.5s ease-in-out;
+        }
+        
+        .conteudov {  
+          padding: 100px 70px 0px 30px;
+          transform: translate3d(0, 0, 26px);
+        }
+        
+        .conteudov .title {    
+          display: block;
+          color: #ffffff;
+          font-weight: 600;
+          font-size: 18px;
+        }
+        
+        .conteudov .text { 
+          display: block;
+          color: rgb(255, 255, 255);
+          font-size:10px;
+          margin-top: 10px;
+        }
+        
+        .botaov { 
+          padding: 14px 25px;
+          transform-style: preserve-3d;
+          position:static;
+          bottom: 20px;
+          left: 20px;
+          right: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          transform: translate3d(0, 0, 26px);
+        }
+        
+        .botaov .social-buttons-container {   
+          display: flex;
+          gap: 10px;
+          transform-style: preserve-3d;
+        }
+        
+        .botaov .social-buttons-container .social-button {    
+          width: 30px;
+          aspect-ratio: 1;
+          padding: 5px;
+          background: rgb(255, 255, 255);
+          border-radius: 50%;
+          border: none;
+          display: grid;
+          place-content: center;
+          box-shadow: rgba(0, 0, 0, 0.5) 0px 7px 5px -5px;
+        }
+      
+        .botaov .social-buttons-container .social-button:first-child {    
+          transition: transform 0.2s ease-in-out 0.4s, box-shadow 0.2s ease-in-out 0.4s;
+        }
+        
+        .botaov .social-buttons-container .social-button:nth-child(2) {                     
+          transition: transform 0.2s ease-in-out 0.6s, box-shadow 0.2s ease-in-out 0.6s;
+        }
+        
+        .botaov .social-buttons-container .social-button:nth-child(3) {     
+          transition: transform 0.2s ease-in-out 0.8s, box-shadow 0.2s ease-in-out 0.8s;
+        }
+        
+        .botaov .social-buttons-container .social-button .svg {        
+          width: 18px;        
+          fill: #000000;
+        }
+      
+                      /*passa o cursor nos icons link,git */  
+        .botaov .social-buttons-container .social-button:hover {   
+          background: rgba(59, 216, 255, 0);
+        }
+                        /* background icons*/
+        .botaov .social-buttons-container .social-button:hover .svg {  
+          fill: rgb(255, 255, 255);
+        }
+        
+        .Btn {
+          border: none;
+          border-radius: 50%;
+          width: 45px;
+          height: 45px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition-duration: .4s;
+          cursor: pointer;
+          position: relative;
+          background-color: rgb(255, 255, 255);
+          overflow: hidden;
+        }
+        
+        .svgIcon {
+          transition-duration: .3s;
+        }
+        
+        .svgIcon path {
+          fill: white;
+        }
+        
+        
+        .Btn:hover {
+          width: 110px;
+          transition-duration: .4s;
+          border-radius: 30px;
+        }
+        
+        .Btn:hover .text {
+          opacity: 1;
+          transition-duration: .4s;
+        }
+        
+        .Btn:hover .svgIcon {
+          opacity: 0;
+          transition-duration: .3s;
+        }
+      
+      
+        .logov {    
+          position: absolute;
+          right: 0;
+          top: 0;
+          transform-style: preserve-3d;
+        }
+        
+        .logov .circle {    
+          display: block;
+          position: absolute;
+          aspect-ratio: 1;
+          border-radius: 50%;
+          top: 0;
+          right: 0;
+          box-shadow: rgba(0, 0, 0, 0.377) -10px 10px 20px 0px;
+          -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+          background: rgba(255, 255, 255, 0.637);
+          transition: all 0.5s ease-in-out;
+        }
+        
+        .logov .circleg1 {     
+          width: 170px;
+          transform: translate3d(0, 0, 20px);
+          top: 8px;
+          right: 8px;
+        }
+        
+        .logov .circleg2 {     
+          width: 140px;
+          transform: translate3d(0, 0, 40px);
+          top: 10px;
+          right: 10px;
+          -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px);
+          transition-delay: 0.4s;
+        }
+        
+        .logov .circleg3{  
+          width: 110px;
+          transform: translate3d(0, 0, 60px);
+          top: 17px;
+          right: 17px;
+          transition-delay: 0.8s;
+        }
+        
+        .logov .circleg4 {    
+          width: 80px;
+          transform: translate3d(0, 0, 80px);
+          top: 23px;
+          right: 23px;
+          transition-delay: 1.2s;
+        }
+        
+        .logov .circleg5 {   
+          width: 50px;
+          transform: translate3d(0, 0, 100px);
+          top: 30px;
+          right: 30px;
+          display: grid;
+          place-content: center;
+          transition-delay: 1.6s;
+        }
+        
+        .logov .circleg5 .svg { 
+          width: 20px;
+          fill: rgb(0, 0, 0);
+        }
+        
+        .parentv:hover .kardv {  
+          transform: rotate3d(1, 1, 0, 30deg);
+          box-shadow: rgba(0, 0, 0, 0.3) 30px 50px 25px -40px, rgba(255, 255, 255, 0.1) 0px 25px 30px 0px;
+        }
+        
+        .parentv:hover .kardv .bottom .social-buttons-container .social-button {  
+          transform: translate3d(0, 0, 50px);
+          box-shadow: rgba(0, 0, 0, 0.082) -5px 20px 10px 0px;
+        }
+        
+        .parentv:hover .kardv .logov .circleg2 {  
+          transform: translate3d(0, 0, 60px);
+        }
+        
+        .parentv:hover .kardv .logov .circleg3{ 
+          transform: translate3d(0, 0, 80px);
+        }
+        
+        .parentv:hover .kardv .logov .circleg4 {   
+          transform: translate3d(0, 0, 100px);
+        }
+        
+        .parentv:hover .kardv .logov .circleg5 {    
+          transform: translate3d(0, 0, 120px);
+        }
+        h2 {
+          color: #ffffff;
+        }       
+
   /*-----------------------------------*/
 
   .list-buttons {
