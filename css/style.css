@@ -8,7 +8,7 @@ body {
     width: 1800px;
     background-color: rgba(228, 227, 217, 0.678);
     margin: auto;    
-    padding: 15px;
+    padding: 25px;
 }
 
 /* -------------------- NAV ------------------------------- */
@@ -57,7 +57,7 @@ nav ul li a:hover{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50vh; 
+  height: 40vh; 
   }
 
 
