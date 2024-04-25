@@ -594,7 +594,7 @@ nav ul li a:hover{
   display: block;
   color: rgb(255, 255, 255);
   font-size: 5px;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .botaog { 
@@ -617,14 +617,13 @@ nav ul li a:hover{
 }
 
 .botaog .social-buttons-container .social-button {    
-  width: 30px;
   aspect-ratio: 1;
   padding: 5px;
   background: rgb(255, 255, 255);
   border-radius: 50%;
   border: none;
   display: grid;
-  place-content: center;
+  place-content: fixed;
   box-shadow: rgba(0, 0, 0, 0.5) 0px 7px 5px -5px;
 }
 
@@ -830,24 +829,24 @@ h2 {
         .conteudov .title {    
           display: block;
           color: #ffffff;
-          font-weight: 600;
+          font-weight: 700;
           font-size: 18px;
         }
         
         .conteudov .text { 
-          display: block;
+          display:flex
           color: rgb(255, 255, 255);
           font-size:10px;
           margin-top: 10px;
         }
         
         .botaov { 
-          padding: 14px 25px;
+          padding: 10px 10px;
           transform-style: preserve-3d;
-          position:static;
+          position:flex;
           bottom: 20px;
-          left: 20px;
-          right: 30px;
+          left: 10px;
+          right: 70px;
           display: flex;
           align-items: center;
           justify-content: space-between;
