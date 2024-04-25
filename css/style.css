@@ -58,6 +58,7 @@ nav ul li a:hover{
   justify-content: center;
   align-items: center;
   height: 50vh; 
+  float: left;
   }
 
 
