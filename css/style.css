@@ -1090,3 +1090,16 @@ h2 {
   p {
     font-size: 20px;
   }
+
+  .img {
+    text-align: center;
+  }
+
+  .tmb {
+    padding: 40px;
+    margin: 20px;
+  }
+
+  .imc {
+    padding-left: 20px;
+  }
