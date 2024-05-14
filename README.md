@@ -22,18 +22,18 @@ Na última página, destacamos os membros que contribuíram para o desenvolvimen
 # Integrantes do Projeto
 # Conheça os integrantes que trabalharam para tornar este projeto funcional:
 
-Pedro Garcia Alaby
-Idade: 21 anos
+Pedro Garcia Alaby \
+Idade: 21 anos \
 "Voe alto de forma leve".
 
-Link
-Idade: 25 anos
+Link \
+Idade: 25 anos \
 "Café primeiro code depois".
 
-Graziela Lopes
-Idade: 18 anos
+Graziela Lopes \
+Idade: 18 anos \
 "Persistir traz perfeição".
 
-Vitor Salomão
-Idade: 19 anos
+Vitor Salomão \
+Idade: 19 anos \
 "Não é sorte, é Deus!".
