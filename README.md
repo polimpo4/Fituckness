@@ -19,8 +19,8 @@ Aqui apresentamos imagens de Fórmulas e Tabelas que ajudam os usuários a enten
 # Equipe do Projeto:
 Na última página, destacamos os membros que contribuíram para o desenvolvimento deste projeto. Cada integrante é apresentado com seu nome completo, idade e uma frase favorita.
 
-# Integrantes do Projeto
-# Conheça os integrantes que trabalharam para tornar este projeto funcional:
+# Integrantes do Projeto:
+Conheça os integrantes que trabalharam para tornar este projeto funcional:
 
 Pedro Garcia Alaby \
 Idade: 21 anos \
