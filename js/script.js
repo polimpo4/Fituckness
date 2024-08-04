@@ -118,7 +118,7 @@ function calc_tbm()
 
 function calc_imc()
 {
-    var altura = document.getElementById("altura_input").value;
+    var altura = document.getElementById("altura_input").value;o
     var peso = document.getElementById("peso_input").value;
     var result;
     var category;
