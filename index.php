@@ -10,9 +10,16 @@
 </head>
 <body>
     <header>
-        <nav></nav>
+        <img src="./assets/midias/logo2.png" alt="" srcset="">
+        <nav>
+            <li onclick="patao(main, './pgs/main.php')">Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </nav>
     </header>
-    <main></main>
+    <main>
+        <?php include "./pgs/main.php"; ?>
+    </main>
     <footer></footer>
 </body>
 </html>

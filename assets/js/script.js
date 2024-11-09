@@ -1,4 +1,78 @@
+function patao(target, url) {
+    var r = new XMLHttpRequest();
+    r.open("GET", url, true);
+    r.withCredentials = true;
+    r.onreadystatechange = function() {
+        if (r.readyState != 4 || r.status != 200) return;
+        target.innerHTML = r.responseText;
+    };
+    r.send();
+}
 
+const main = document.getElementsByTagName("main")[0];
+const btn = document.getElementsByTagName("button");
+
+btn[0].addEventListener("click", ()=>{
+    patao(main, "./pgs/imc.php");
+})
+
+btn[1].addEventListener("click", ()=>{
+    alert(2);
+})
+
+let altura = "";
+let peso = "";
+
+
+function alturafunc(x){
+    if(Number.isInteger(parseInt(x.value))){
+
+        if(x.value.includes(",") || x.value.includes(".")){
+            x.value = "1";
+            return alert("Apenas numeros INTEIROS são permitidos!");
+        }
+
+        if (x.value > 269 || x.value < 0 || x.value == 0) {
+            x.value = "1";
+        }
+
+        altura = parseInt(x.value)/100;
+    }else{
+        x.value = "1";
+        return alert("Apenas numeros são permitidos de medidas humanas!");
+    }
+}
+
+function pesofunc(x){
+    if(Number.isInteger(parseInt(x.value))){
+
+        if(x.value.includes(",")){
+            x.value = "1";
+            return alert("Apenas pesos com . são permitidos!");
+        }
+
+        if (x.value > 500 || x.value < 0 || x.value == 0) {
+            x.value = "1";
+        }
+
+        peso = parseFloat(x.value);
+    }else{
+        x.value = "1";
+        return alert("Apenas numeros são permitidos de medidas humanas!");
+    }
+}
+
+let resultado = document.getElementsByClassName("resultado");
+
+
+function teste(){
+    resultado[0].innerText = peso/(altura*altura);
+}
+
+
+
+
+/* 
 function get_gender_from_radio()
 {
     // Get all radio buttons with name 'gender'
@@ -19,10 +93,7 @@ function get_gender_from_radio()
 
 function get_AF()
 {
-    /*
-     Get Activity Factor (AF) based on activity type and return the respective
-     value
-     */
+
 
     // Get the select element
     var selectItem = document.getElementById("activity_List");
@@ -114,8 +185,6 @@ function calc_tbm()
     //     age}, sex ${gender}, AF ${AF}`);
 }
 
-/* -------------------------- IMC -----------------------------------*/
-
 function calc_imc()
 {
     var altura = document.getElementById("altura_input").value;o
@@ -183,15 +252,9 @@ function clean()
     document.getElementById("peso_input").value = "";
 }
 
-/* ------------------- Satinization functions -----------------------*/
-
 function sanitizeInput(input)
 {
-    /*
-    In this function, document.createTextNode(input) creates a text node which
-    automatically encodes special HTML characters. div.innerHTML then returns
-    the sanitized HTML as a string.
-    */
+
 
     // Create a new div element
     var div = document.createElement('div');
@@ -200,4 +263,4 @@ function sanitizeInput(input)
     div.appendChild(document.createTextNode(input));
     // Return the sanitized HTML as a string
     return div.innerHTML;
-}
+} */
