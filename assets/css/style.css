@@ -70,18 +70,18 @@ body>main>div>div:last-of-type{
     flex-direction: column;
 }
 
-body>main>form>div{
+body>main>.calculo{
     display: flex;
-    flex-direction: column;
+    flex-direction: column!important;
     row-gap: 1vh;
 }
 
-body>main>form>div>input{
+body>main>.calculo>input{
     width: 300px;
     padding: 1vh;
 }
 
-body>main>form>div>input:last-of-type{
+body>main>.calculo>input:last-of-type{
     cursor: pointer;
 }
 body>main>.resultado{
