@@ -71,7 +71,7 @@ function teste() {
             pesoNecessario = pesoIdealMin - peso; // Calcular quanto precisa ganhar
             mensagem = `Necessita ganhar ${pesoNecessario.toFixed(2)} kg para alcançar a categoria Normal.`;
             break;
-        case (imc >= 18.5 && imc <= 24.9):
+        case (imc >= 18.5 && imc <= 25):
             categoria = "Normal";
             mensagem = "Você está na faixa de peso normal!";
             break;
@@ -102,7 +102,6 @@ function teste() {
 
     // Atualizando o resultado na página com a categoria e a recomendação de peso
     resultado[0].innerText = `${categoria} - IMC: ${imc.toFixed(2)}\n${mensagem}`;
-    console.log(mensagem)
 }
 
 */
