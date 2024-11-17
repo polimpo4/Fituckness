@@ -1,4 +1,5 @@
-*{
+<?php
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -158,7 +159,6 @@ body>main>.container>.IMC>span:nth-of-type(15), body>main>.container>.IMC>span:n
     color:white;
 }
 
-/* Animation logo */
 @keyframes pulse {
     0% {
         transform: scale(0.75);
@@ -171,4 +171,5 @@ body>main>.container>.IMC>span:nth-of-type(15), body>main>.container>.IMC>span:n
     100% {
         transform: scale(0.75);
     }
-}
+} */
+?>
