@@ -1,4 +1,4 @@
-This project it is created by zero, only have the formulas of metrics created by:
+This project only have the formulas of metrics created by:
 
 
 
